@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="4dp"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Output"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/TicTacToeButton" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/TicTacToeButton" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1's turn"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
